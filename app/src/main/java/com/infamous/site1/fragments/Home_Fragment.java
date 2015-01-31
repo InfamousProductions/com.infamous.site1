@@ -15,13 +15,13 @@ import java.util.ArrayList;
 /**
  * Created by Daniel on 09.11.2014.
  */
-public class Preview_Fragment extends Fragment implements View.OnClickListener {
+public class Home_Fragment extends Fragment implements View.OnClickListener {
 
     ArrayList<String> dialogItems;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_preview, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_home, container, false);
 
         Button dialog = (Button) rootView.findViewById(R.id.buttonStand);
         Button singleDialog = (Button) rootView.findViewById(R.id.buttonSingle);

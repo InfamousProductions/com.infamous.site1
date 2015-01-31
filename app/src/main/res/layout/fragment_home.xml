@@ -1,4 +1,4 @@
-<com.brobox.materialmenudrawer.ui.MultiSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.infamous.site1.ui.MultiSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/swipe_refresh_layout"
@@ -61,6 +61,6 @@
 
     </ScrollView>
 
-</com.brobox.materialmenudrawer.ui.MultiSwipeRefreshLayout>
+</com.infamous.site1.ui.MultiSwipeRefreshLayout>
 
 

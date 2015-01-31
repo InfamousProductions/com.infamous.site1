@@ -37,7 +37,7 @@ import com.infamous.site1.dialog.Single_Dialog;
 import com.infamous.site1.dialog.Standard_Dialog;
 import com.infamous.site1.fragments.Blog_Fragment;
 import com.infamous.site1.fragments.Bookmark_Fragment;
-import com.infamous.site1.fragments.Preview_Fragment;
+import com.infamous.site1.fragments.Home_Fragment;
 import com.infamous.site1.fragments.Sales_Fragment;
 import com.infamous.site1.ui.Items;
 import com.infamous.site1.ui.MultiSwipeRefreshLayout;
@@ -171,7 +171,7 @@ public class MainActivity extends ActionBarActivity implements
                 break;
             case 1:
                 //Beiträge
-                fragment = new Preview_Fragment();
+                fragment = new Home_Fragment();
                 break;
             case 2:
                 //Angebote
@@ -187,7 +187,7 @@ public class MainActivity extends ActionBarActivity implements
                 break;
             case 5:
                 //Google+ Community
-                fragment = new Preview_Fragment();
+                fragment = new Home_Fragment();
                 break;
         }
 
