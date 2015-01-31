@@ -12,7 +12,7 @@ import com.infamous.site1.R;
 /**
  * Created by Daniel on 09.11.2014.
  */
-public class Sales_Fragment extends Fragment {
+public class Extras_Fragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

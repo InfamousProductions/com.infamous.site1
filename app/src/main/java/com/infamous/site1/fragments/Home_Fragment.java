@@ -6,17 +6,20 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.content.Intent;
 
 import com.infamous.site1.R;
 import com.infamous.site1.activities.MainActivity;
 
 import java.util.ArrayList;
+import android.net.*;
 
 /**
  * Created by Daniel on 09.11.2014.
  */
 public class Home_Fragment extends Fragment implements View.OnClickListener {
 
+	public static final int APPLY = 0;
     ArrayList<String> dialogItems;
 
     @Override
@@ -46,7 +49,9 @@ public class Home_Fragment extends Fragment implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.buttonStand:
-                MainActivity.showMyDialog("Dialog", "Test message.", "cancel", "ok");
+                Intent forum = new Intent(Intent.ACTION_VIEW).setData(Uri.parse
+				("http://infamousdevelopment.com/forum")); 
+				startActivity(forum);
                 break;
             case R.id.buttonSingle:
                 MainActivity.showMySingleDialog("Dialog", dialogItems, "cancel", "ok");

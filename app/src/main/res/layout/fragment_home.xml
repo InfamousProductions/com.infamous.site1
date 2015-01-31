@@ -33,28 +33,40 @@
                 android:text="Pull down to refresh!"
                 android:id="@+id/textView" />
 
-            <Button
-                android:id="@+id/buttonStand"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="standard dialog"/>
+			<Button 
+				android:layout_gravity="center" 
+				android:id="@+id/buttonStand" 
+				android:background="@drawable/items" 
+				android:layout_width="fill_parent" 
+				android:layout_height="80.0dip" 
+				android:layout_marginTop="20.0dip"
+				android:text="standard dialog" />
 
             <Button
+				android:layout_gravity="center" 
                 android:id="@+id/buttonSingle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:background="@drawable/items" 
+				android:layout_width="fill_parent" 
+				android:layout_height="80.0dip" 
+				android:layout_marginTop="20.0dip"
                 android:text="traditional single-choice dialog"/>
 
             <Button
+				android:layout_gravity="center" 
                 android:id="@+id/buttonPersSingle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:background="@drawable/items" 
+				android:layout_width="fill_parent" 
+				android:layout_height="80.0dip" 
+				android:layout_marginTop="20.0dip"
                 android:text="persistent single-choice dialog" />
 
             <Button
+				android:layout_gravity="center" 
                 android:id="@+id/buttonMulti"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:background="@drawable/items" 
+				android:layout_width="fill_parent" 
+				android:layout_height="80.0dip" 
+				android:layout_marginTop="20.0dip"
                 android:text="persistent multiple-choice dialog" />
 
         </LinearLayout>

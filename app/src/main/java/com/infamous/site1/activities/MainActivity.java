@@ -38,7 +38,7 @@ import com.infamous.site1.dialog.Standard_Dialog;
 import com.infamous.site1.fragments.Blog_Fragment;
 import com.infamous.site1.fragments.Bookmark_Fragment;
 import com.infamous.site1.fragments.Home_Fragment;
-import com.infamous.site1.fragments.Sales_Fragment;
+import com.infamous.site1.fragments.Extras_Fragment;
 import com.infamous.site1.ui.Items;
 import com.infamous.site1.ui.MultiSwipeRefreshLayout;
 
@@ -175,7 +175,7 @@ public class MainActivity extends ActionBarActivity implements
                 break;
             case 2:
                 //Angebote
-                fragment = new Sales_Fragment();
+                fragment = new Extras_Fragment();
                 break;
             case 3:
                 //Blog
