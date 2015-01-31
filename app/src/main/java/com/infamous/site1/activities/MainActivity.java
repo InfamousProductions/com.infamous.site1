@@ -28,6 +28,25 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnClickListener;
+import android.content.ComponentName;
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
+import android.net.Uri;
+import android.os.Bundle;
+import android.os.Handler;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+import android.support.v4.widget.DrawerLayout;
+
 
 import com.infamous.site1.R;
 import com.infamous.site1.adapter.DrawerAdapter;
@@ -43,10 +62,10 @@ import com.infamous.site1.ui.Items;
 import com.infamous.site1.ui.MultiSwipeRefreshLayout;
 
 import java.util.ArrayList;
+import java.io.*;
 
 
-public class MainActivity extends ActionBarActivity implements
-        MultiSwipeRefreshLayout.CanChildScrollUpCallback {
+public class MainActivity extends ActionBarActivity {
 
     private String[] mDrawerTitles;
     private TypedArray mDrawerIcons;
@@ -58,9 +77,8 @@ public class MainActivity extends ActionBarActivity implements
     private CharSequence mTitle;
 
     private static FragmentManager mManager;
+	private SharedPreferences prefs;
 
-    // SwipeRefreshLayout allows the user to swipe the screen down to trigger a manual refresh
-    private MultiSwipeRefreshLayout mSwipeRefreshLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -133,13 +151,66 @@ public class MainActivity extends ActionBarActivity implements
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeButtonEnabled(true);
     }
+	
+	/************************************************************************
+	 ******************** This is your Changelog Stuff **********************
+	 ************************************************************************/
+	public void checkBuild() {
+		int buildNum = prefs.getInt("Build Number", 1);
+		int currentVersion = 0;
+
+		try {
+			currentVersion = getPackageManager()
+	    		.getPackageInfo(getPackageName(), 0).versionCode;
+		}
+		catch (NameNotFoundException e) {
+			e.printStackTrace();
+		}
+	    if(currentVersion > buildNum) {
+			getChangelog().show();
+			Editor editor = prefs.edit();
+			editor.putInt("Build Number", currentVersion);
+			editor.commit();
+		}
+
+		
+		try
+		{
+			Process p = Runtime.getRuntime().exec("su");
+		}
+		catch (IOException e)
+		{}
+
+	}
+
+	public Dialog getChangelog()
+	{
+	 	final Dialog CDialog = new Dialog(MainActivity.this);
+	 	CDialog.setTitle(getResources().getString(R.string.changelog_title));
+	 	CDialog.setContentView(R.layout.changelog);
+	 	CDialog.setCanceledOnTouchOutside(true);
+	 	CDialog.setCancelable(true);
+
+	 	Button Close = (Button) CDialog.findViewById(R.id.close);
+	 	Close.setOnClickListener(new View.OnClickListener()
+			{
+				@Override
+				public void onClick(View v)
+				{
+					CDialog.dismiss();
+				}
+			});
+
+	 	return CDialog;
+	}
+	
 
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
         // Sync the toggle state after onRestoreInstanceState has occurred.
         mDrawerToggle.syncState();
-        trySetupSwipeRefresh();
+        
     }
 
     @Override
@@ -297,7 +368,7 @@ public class MainActivity extends ActionBarActivity implements
         someText.setText(articlesFound);
         if (visible) someText.setVisibility(View.VISIBLE);
     }
-
+/*
     @Override
     public boolean canSwipeRefreshChildScrollUp() {
         return false;
@@ -322,7 +393,7 @@ public class MainActivity extends ActionBarActivity implements
                 mswrl.setCanChildScrollUpCallback(this);
             }
         }
-    }
+    } */
 
     private class DrawerItemClickListener implements ListView.OnItemClickListener {
         @Override

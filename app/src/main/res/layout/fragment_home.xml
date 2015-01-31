@@ -1,7 +1,6 @@
 <com.infamous.site1.ui.MultiSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/swipe_refresh_layout"
+    xmlns:tools="http://schemas.android.com/tools"    
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:foreground="@drawable/bottom_shadow">
@@ -20,23 +19,10 @@
             android:gravity="center"
             android:orientation="vertical" >
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:text="@string/hello_world"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Pull down to refresh!"
-                android:id="@+id/textView" />
-
 			<Button 
 				android:layout_gravity="center" 
 				android:id="@+id/buttonStand" 
-				android:background="@drawable/items" 
+				android:background="@drawable/items_dark" 
 				android:layout_width="fill_parent" 
 				android:layout_height="80.0dip" 
 				android:layout_marginTop="20.0dip"
@@ -45,7 +31,7 @@
             <Button
 				android:layout_gravity="center" 
                 android:id="@+id/buttonSingle"
-                android:background="@drawable/items" 
+                android:background="@drawable/items_dark" 
 				android:layout_width="fill_parent" 
 				android:layout_height="80.0dip" 
 				android:layout_marginTop="20.0dip"
@@ -54,7 +40,7 @@
             <Button
 				android:layout_gravity="center" 
                 android:id="@+id/buttonPersSingle"
-                android:background="@drawable/items" 
+                android:background="@drawable/items_dark" 
 				android:layout_width="fill_parent" 
 				android:layout_height="80.0dip" 
 				android:layout_marginTop="20.0dip"
@@ -63,7 +49,7 @@
             <Button
 				android:layout_gravity="center" 
                 android:id="@+id/buttonMulti"
-                android:background="@drawable/items" 
+                android:background="@drawable/items_dark" 
 				android:layout_width="fill_parent" 
 				android:layout_height="80.0dip" 
 				android:layout_marginTop="20.0dip"

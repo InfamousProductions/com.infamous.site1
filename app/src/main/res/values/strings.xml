@@ -6,6 +6,21 @@
     <string name="hello_world">Hello World!</string>
     <string name="drawer_open">open</string>
     <string name="drawer_close">close</string>
+	
+	<!-- Misc Stuff -->
+	<string name="more_dev">More From Developer</string>
+	<string name="content_description">Fish</string>
+	<string name="back_button">Back</string>
+	<string name="about_image_main">Main About Image</string>
+	<string name="divider">Text Divider</string>
+	<string name="later">Later</string>
+	<string name="get">Get App</string>
+	<string name="share">Share</string>
+	<string name="ok">OK</string>
+	<string name="close">Close</string>
+	<string name="new_icons_title">Newly Added Icons</string>
+  	<string name="cancel">Cancel</string>
+	
 
     <plurals name="numberOfNewArticles">
         <item quantity="one">%d new</item>
