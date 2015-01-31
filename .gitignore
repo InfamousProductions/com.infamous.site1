@@ -4,3 +4,10 @@
 /.idea/libraries
 .DS_Store
 /build
+bin/
+gen/
+out/
+.idea/
+.settings/
+*.orig
+*~
