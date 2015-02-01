@@ -50,8 +50,8 @@
     <color name="background_window">#FFDEDEDE</color>
     <color name="background_tabs">#FFE5E5E5</color>
 	<color name="about_title_color">#ff33b5e5</color>
-	<color name="divider">#FF33b5e5</color>
-	<color name="divider_page">#ff33b5e5</color>
+	<color name="divider">#FFDEDEDE</color>
+	<color name="divider_page">#FFDEDEDE</color>
 	<color name="launcher_divider_bottom">#cc333333</color>
 	<color name="text_description">#FF333333</color>
 	<color name="text_title">#FF33B5E5</color>
