@@ -52,7 +52,6 @@
     <color name="background_window">#FFDEDEDE</color>
     <color name="background_tabs">#FFE5E5E5</color>
 	<color name="about_title_color">#ff33b5e5</color>
-	<color name="divider">#FFDEDEDE</color>
 	<color name="divider_page">#FFDEDEDE</color>
 	<color name="launcher_divider_bottom">#cc333333</color>
 	<color name="text_description">#FF333333</color>
@@ -131,7 +130,6 @@
 		<color name="background_light">#ffeeeeee</color>
 		<color name="background_material_dark">#ff303030</color>
 		<color name="background_material_light">#ffeeeeee</color>
-		<color name="black">#ff000000</color>
 		<color name="bright_foreground_disabled_material_dark">#80ffffff</color>
 		<color name="bright_foreground_disabled_material_light">#80000000</color>
 		<color name="bright_foreground_inverse_material_dark">@color/bright_foreground_material_light</color>
@@ -256,6 +254,4 @@
 		<color name="theme">#ff3a759b</color>
 		<color name="theme_dark">#ff3a759b</color>
 		<color name="theme_trans">#0f4285f4</color>
-		<color name="transparent">#00000000</color>
-		<color name="white">#ffffffff</color>
 </resources>
