@@ -341,7 +341,7 @@ public class MainActivity extends ActionBarActivity {
         TextView someText = (TextView) v.findViewById(R.id.item_new);
         Resources res = getResources();
         String articlesFound = "";
-
+/*
         switch (position) {
             case 1:
                 articlesFound = res.getQuantityString(R.plurals.numberOfNewArticles, counter, counter);
@@ -363,7 +363,7 @@ public class MainActivity extends ActionBarActivity {
                 articlesFound = res.getQuantityString(R.plurals.numberOfNewArticles, counter, counter);
                 someText.setBackgroundResource(R.drawable.new_community);
                 break;
-        }
+        } */
 
         someText.setText(articlesFound);
         if (visible) someText.setVisibility(View.VISIBLE);
