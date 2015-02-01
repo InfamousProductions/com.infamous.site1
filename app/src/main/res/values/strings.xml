@@ -28,7 +28,7 @@
     </plurals>
 
     <string-array name="drawer_titles">
-        <item>Home</item>
+        <item>Infamous Links</item>
         <item>Extras</item>
         <item>Tools</item>
         <item>Favorites</item>
