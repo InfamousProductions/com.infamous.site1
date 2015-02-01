@@ -6,15 +6,17 @@
     <color name="color_light_blue_100">#b9e1f8</color>
     <color name="color_light_blue_700">#1687ca</color>
 	
-	<!-- Material Black Primary -->
+	<!-- Material Colors Primary -->
     <color name="color_black">#000000</color>
+	<color name="color_blue">#ff3a759b</color>
+	
     
     <!-- Material Orange Accent -->
     <color name="color_orange_A200">#ff9800</color>
     <color name="color_orange_A100">#ffd180</color>
     <color name="color_orange_A400">#ff9100</color>
 
-    <color name="primary_color">@color/color_black</color>
+    <color name="primary_color">@color/color_blue</color>
     <color name="primary_color_light">@color/color_light_blue_100</color>
     <color name="primary_color_dark">@color/color_light_blue_700</color>
 

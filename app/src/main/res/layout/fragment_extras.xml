@@ -21,7 +21,7 @@
 
 			<Button 
 				android:layout_gravity="center" 
-				android:id="@+id/site" 
+				android:id="@+id/buttonStand" 
 				android:background="@drawable/items_dark" 
 				android:layout_width="fill_parent" 
 				android:layout_height="80.0dip" 
@@ -30,7 +30,7 @@
 
             <Button
 				android:layout_gravity="center" 
-                android:id="@+id/apps"
+                android:id="@+id/buttonSingle"
                 android:background="@drawable/items_dark" 
 				android:layout_width="fill_parent" 
 				android:layout_height="80.0dip" 
@@ -39,7 +39,7 @@
 
             <Button
 				android:layout_gravity="center" 
-                android:id="@+id/blog"
+                android:id="@+id/buttonPersSingle"
                 android:background="@drawable/items_dark" 
 				android:layout_width="fill_parent" 
 				android:layout_height="80.0dip" 
@@ -48,7 +48,7 @@
 
             <Button
 				android:layout_gravity="center" 
-                android:id="@+id/downloads"
+                android:id="@+id/buttonMulti"
                 android:background="@drawable/items_dark" 
 				android:layout_width="fill_parent" 
 				android:layout_height="80.0dip" 
